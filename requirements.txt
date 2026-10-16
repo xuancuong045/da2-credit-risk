@@ -1,0 +1,28 @@
+# Data
+polars
+pyarrow
+pandas
+numpy
+
+# Champion
+scikit-learn
+optbinning
+
+# Challenger
+xgboost
+lightgbm
+optuna
+shap
+
+# Trustworthy ML & monitoring
+mapie
+evidently
+mlflow
+
+# Utilities
+matplotlib
+seaborn
+pyyaml
+jupyter
+ipykernel
+kaggle

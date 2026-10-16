@@ -1,0 +1,15 @@
+# Environment
+.venv/
+.env
+kaggle.json
+
+# Data & artifacts (không đưa lên Git)
+data/
+*.parquet
+mlruns/
+mlartifacts/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

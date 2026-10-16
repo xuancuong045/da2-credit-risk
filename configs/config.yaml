@@ -1,0 +1,39 @@
+project: da2-credit-risk
+seed: 42
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  depth0: data/processed/depth0.parquet
+
+columns:
+  id: case_id
+  target: target
+  time: [date_decision, WEEK_NUM]
+
+# Mốc chia tập theo WEEK_NUM (bao gồm cả hai đầu)
+split:
+  train: [0, 43]    # 01/01/2019 - 04/11/2019
+  valid: [44, 51]   # 05/11/2019 - 30/12/2019
+  calib: [52, 55]   # 31/12/2019 - 27/01/2020
+  oot1:  [56, 61]   # 28/01/2020 - 09/03/2020
+  oot2:  [62, 91]   # 10/03/2020 - 05/10/2020
+
+champion:
+  iv_min: 0.02
+  scorecard:
+    pdo: 20          # ĐỀ XUẤT - cần chốt
+    score_ref: 600   # ĐỀ XUẤT - cần chốt
+    odds_ref: 50     # good:bad tại score_ref, ĐỀ XUẤT - cần chốt
+
+challenger:
+  scale_pos_weight_init: 30.8   # (1 - 0.0314) / 0.0314
+  top_k_features: [200, 300]
+  max_gini_gap: null            # ngưỡng chênh lệch Gini Train-Valid - cần chốt
+
+conformal:
+  method: mondrian
+  alpha: 0.1        # ĐỀ XUẤT - cần chốt
+
+monitoring:
+  psi_thresholds: [0.1, 0.25]
