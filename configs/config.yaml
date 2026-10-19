@@ -21,19 +21,23 @@ split:
 
 champion:
   iv_min: 0.02
+  # Scaling scorecard: Score = Offset + Factor * ln(Odds), Odds = good:bad
+  # Factor = pdo / ln(2); Offset = score_ref - Factor * ln(odds_ref)
+  # Chỉ đổi thang điểm hiển thị, không ảnh hưởng Gini/KS hay thứ hạng khách hàng
   scorecard:
-    pdo: 20          # ĐỀ XUẤT - cần chốt
-    score_ref: 600   # ĐỀ XUẤT - cần chốt
-    odds_ref: 50     # good:bad tại score_ref, ĐỀ XUẤT - cần chốt
+    pdo: 20          # +20 điểm = odds good:bad gấp đôi
+    score_ref: 600   # điểm tham chiếu
+    odds_ref: 50     # odds good:bad = 50:1 tại score_ref
 
 challenger:
   scale_pos_weight_init: 30.8   # (1 - 0.0314) / 0.0314
   top_k_features: [200, 300]
-  max_gini_gap: null            # ngưỡng chênh lệch Gini Train-Valid - cần chốt
+  max_gini_gap: null            # chốt ở W6 sau khi có LightGBM baseline
 
 conformal:
   method: mondrian
-  alpha: 0.1        # ĐỀ XUẤT - cần chốt
+  alpha: 0.1                    # coverage mục tiêu 90%; thí nghiệm chạy thêm 0.05 và 0.2
+  alpha_grid: [0.05, 0.1, 0.2]
 
 monitoring:
   psi_thresholds: [0.1, 0.25]
