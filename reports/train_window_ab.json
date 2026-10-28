@@ -1,0 +1,36 @@
+{
+ "A": {
+  "weeks_fit": [
+   0,
+   39
+  ],
+  "n_fit": 754796,
+  "best_iter": 145,
+  "gini_fit": 0.8375147091246551,
+  "gini_es": 0.6516107462036977,
+  "gini_valid": 0.6550596194016984,
+  "gap_fit_valid": 0.18245508972295665,
+  "psi_score_valid": 0.0010062735596895684,
+  "gini_valid_week_mean": 0.6524973917982382,
+  "gini_valid_week_std": 0.02950925674379993,
+  "gini_valid_week_min": 0.6189944648893577,
+  "minutes": 3.2
+ },
+ "B": {
+  "weeks_fit": [
+   20,
+   39
+  ],
+  "n_fit": 436016,
+  "best_iter": 123,
+  "gini_fit": 0.868749518905642,
+  "gini_es": 0.6421757976987474,
+  "gini_valid": 0.6446377523817062,
+  "gap_fit_valid": 0.22411176652393583,
+  "psi_score_valid": 0.0010422027728776984,
+  "gini_valid_week_mean": 0.6420054494334531,
+  "gini_valid_week_std": 0.026877175201699258,
+  "gini_valid_week_min": 0.6126528373810269,
+  "minutes": 1.8
+ }
+}
