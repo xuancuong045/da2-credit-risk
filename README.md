@@ -1,6 +1,6 @@
 # Đồ án 2 – Dự đoán rủi ro tín dụng theo khung Champion–Challenger
 
-Đồ án 2 học phần **Phân tích dữ liệu và học máy** (Đại học Bách khoa Hà Nội).
+Đồ án 2 chủ đề **Phân tích dữ liệu và học máy** (Đại học Bách khoa Hà Nội).
 Bộ dữ liệu: [Home Credit – Credit Risk Model Stability](https://www.kaggle.com/competitions/home-credit-credit-risk-model-stability) (Kaggle).
 
 ## Bài toán
