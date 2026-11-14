@@ -2,7 +2,7 @@
 .venv/
 .env
 kaggle.json
-
+models/
 # Data & artifacts (không đưa lên Git)
 data/
 *.parquet
@@ -13,3 +13,4 @@ mlartifacts/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+*.npy
