@@ -12,7 +12,7 @@ import polars as pl
 from src.features.unify_tax import unify_tax
 
 # R7: giữ trong bảng để kiểm tra công bằng, KHÔNG đưa vào mô hình
-AUDIT_COLS = ['person_1__app__sex_738L']
+AUDIT_COLS = ['person_1__app__sex_738L', 'person_1__app__gender_992L']
 # Cột không phải feature: cột tổ chức + cột kiểm tra công bằng
 META = ['case_id', 'date_decision', 'MONTH', 'WEEK_NUM', 'target', 'split'] + AUDIT_COLS
 
