@@ -1,28 +1,28 @@
+# Python 3.12 — phiên bản dùng cho toàn bộ kết quả trong reports/
+
 # Data
-polars
-pyarrow
-pandas
-numpy
+polars==2.0.0
+pyarrow==25.0.1
+pandas==3.0.6
+numpy==2.5.4
 
 # Champion
-scikit-learn
-optbinning
+scikit-learn==1.9.1
+optbinning==1.0.0
 
 # Challenger
-xgboost
-lightgbm
-optuna
-shap
-
-# Trustworthy ML & monitoring
-mapie
-evidently
-mlflow
+lightgbm==4.7.0
+xgboost==3.4.1
+catboost==1.2.10
+optuna==5.0.0
+shap==0.54.1
+scipy==1.18.1
 
 # Utilities
-matplotlib
-seaborn
-pyyaml
+joblib==1.6.0
+matplotlib==3.11.2
+seaborn==0.13.2
+pyyaml==6.0.3
 jupyter
 ipykernel
 kaggle
