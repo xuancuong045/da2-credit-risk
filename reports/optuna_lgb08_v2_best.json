@@ -1,0 +1,16 @@
+{
+  "best_value": 0.6963572177417037,
+  "best_params": {
+    "num_leaves": 22,
+    "min_child_samples": 1332,
+    "feature_fraction": 0.2596405149438167,
+    "bagging_fraction": 0.9934434683002586,
+    "lambda_l1": 7.264803074826735,
+    "lambda_l2": 0.009853225172032555,
+    "min_gain_to_split": 0.005522117123602399,
+    "path_smooth": 40.77307142274171,
+    "cat_smooth": 25.92475660475159,
+    "extra_trees": true
+  },
+  "best_trial": 0
+}
